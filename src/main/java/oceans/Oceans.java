@@ -14,15 +14,14 @@ public class Oceans {
             for (int j = 0; j < ocean[i].length; j++){
 
                 // Queue
-                //
 
                 if (ocean[i][j] == 'x' && !visited[i][j]){
+
 
                 }
                 visited[i][j] = true;
             }
         }
-
         return islandCount;
     }
 }

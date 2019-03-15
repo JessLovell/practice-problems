@@ -8,3 +8,4 @@
 6. Create an `ArrayList` Class with `.add`, `.get`, `.remove`.
 7. Given a Binary Search Tree, serialize the tree into a list. Given a list, deserialize and create the exact tree.
 8. Is a tree a Binary Search Tree?
+9. Given a matrix where each room has a direction to move, determine if you have escaped the matrix of rooms.
