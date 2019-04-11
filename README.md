@@ -6,5 +6,6 @@
 4. Gradietize an image (Sort a matrix).
 5. Anagram a word -- no clear direction on this one (provide all possible combinations?, return the number of words).
 6. Create an `ArrayList` Class with `.add`, `.get`, `.remove`.
+SQL: get max value from salary table, get 2nd max value from salary.
 7. Given a Binary Search Tree, serialize the tree into a list. Given a list, deserialize and create the exact tree.
 8. Is a tree a Binary Search Tree?
