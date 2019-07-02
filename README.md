@@ -9,3 +9,9 @@
 7. Given a Binary Search Tree, serialize the tree into a list. Given a list, deserialize and create the exact tree.
 8. Is a tree a Binary Search Tree?
 9. Given a matrix where each room has a direction to move, determine if you have escaped the matrix of rooms.
+10. Reverse a string.
+11. Spiral print an array
+12. compute nth fib number
+13. print multiplication table for 12X12
+14. print odd numbers
+15. find largest int in array
