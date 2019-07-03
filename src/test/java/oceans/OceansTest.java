@@ -37,6 +37,9 @@ public class OceansTest {
     @Test
     public void testEmpty() {
         int[][] one = new int[][]{};
+
+        assertEquals(0, Oceans.isIsland(one));
+
     }
 
 }

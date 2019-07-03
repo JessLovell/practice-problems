@@ -8,6 +8,10 @@ public class Oceans {
     public static int isIsland (int[][] ocean) {
 
         int islandCount = 0;
+        if(ocean.length == 0){
+            return islandCount;
+        }
+
         boolean[][] visited = new boolean[ocean.length][ocean[0].length];
 
         for (int i = 0;  i < ocean.length; i++){
