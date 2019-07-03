@@ -1,5 +1,6 @@
 # Practice Problems
 ## Questions
+
 :sunrise_over_mountains: | STRINGS
 ------------------------ | -------
 10. | Reverse a string.
@@ -83,4 +84,3 @@
 6. | Create an `ArrayList` Class with `.add`, `.get`, `.remove`.
 12. | compute nth fib number
 14. | print odd numbers
-
