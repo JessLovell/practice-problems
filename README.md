@@ -3,8 +3,8 @@
 
 :sunrise_over_mountains: | STRINGS
 ------------------------ | -------
-10. | Reverse a string.
-5. | Anagram a word -- no clear direction on this one (provide all possible combinations?, return the number of words).
+-- | Reverse a string.
+-- | Anagram a word -- no clear direction on this one (provide all possible combinations?, return the number of words).
 -- | How do you print duplicate characters from a string?
 -- | How do you check if two strings are anagrams of each other?
 -- | How do you print the first non-repeated character from a string?
@@ -28,18 +28,18 @@
 :blossom: | How do you find duplicate numbers in an array if it contains multiple duplicates?
 :blossom: | How are duplicates removed from a given array in Java?
 -- | How is an integer array sorted in place using the quicksort algorithm?
---| How do you remove duplicates from an array in place?
+-- | How do you remove duplicates from an array in place?
 :blossom: | How do you reverse an array in place in Java?
 -- | How are duplicates removed from an array without using any library?
 -- | Given an array, return the value that shows up at least `n/2` times.
 
 :sunflower: | MATRICES
 ----------- | ---------
-4. | Gradietize an image (Sort a matrix).
-11. | Spiral print an array
-13. | print multiplication table for 12X12
-1.| Given an `Ocean`, count the number of `Islands`.
-9.| Given a matrix where each room has a direction to move, determine if you have escaped the matrix of rooms.
+-- | Gradietize an image (Sort a matrix).
+-- | Spiral print an array
+-- | print multiplication table for 12X12
+-- | Given an `Ocean`, count the number of `Islands`.
+-- | Given a matrix where each room has a direction to move, determine if you have escaped the matrix of rooms.
 
 
 :tulip: | LINKED LISTS
@@ -55,9 +55,9 @@
 
 :deciduous_tree: | BINARY TREES
 ---------------- | ------------
-8. | Is a tree a Binary Search Tree?
-2. | All the possible permutations of a Binary Search Tree.
-7. | Given a Binary Search Tree, serialize the tree into a list. Given a list, deserialize and create the exact tree.
+-- | Is a tree a Binary Search Tree?
+-- | All the possible permutations of a Binary Search Tree.
+-- | Given a Binary Search Tree, serialize the tree into a list. Given a list, deserialize and create the exact tree.
 -- | How is a binary search tree implemented?
 -- | How do you perform preorder traversal in a given binary tree?
 -- | How do you traverse a given binary tree in preorder without recursion?
@@ -70,7 +70,7 @@
 -- | How do you perform a binary search in a given array?
 
 :bouquet: | MISCELLANEOUS
---- | ---
+--------- | -------------
 -- | How is a bubble sort algorithm implemented?
 -- | How is an iterative quicksort algorithm implemented?
 -- | How do you implement an insertion sort algorithm?
@@ -81,6 +81,6 @@
 -- | How do you swap two numbers without using the third variable?
 -- | How do you check if two rectangles overlap with each other?
 -- | How do you design a vending machine?
-6. | Create an `ArrayList` Class with `.add`, `.get`, `.remove`.
-12. | compute nth fib number
-14. | print odd numbers
+-- | Create an `ArrayList` Class with `.add`, `.get`, `.remove`.
+-- | compute nth fib number
+-- | print odd numbers
