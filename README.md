@@ -35,7 +35,7 @@
 
 :sunflower: | MATRICES
 ----------- | ---------
--- | Gradietize an image (Sort a matrix).
+:sunflower: | Gradietize an image (Sort a matrix).
 -- | Spiral print an array
 -- | print multiplication table for 12X12
 -- | Given an `Ocean`, count the number of `Islands`.
