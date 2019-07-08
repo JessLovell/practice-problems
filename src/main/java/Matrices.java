@@ -18,92 +18,106 @@ public class Matrices {
     // Spiral print an array
     public static void spiralPrint(int[][] arr){
 
-//        /*
-//        j - start row
-//        k - end row
-//        l - start col
-//        m - end col
-//        i - iterator
-//         */
-//
-        int i, j = 0, l = 0;
-        int k = arr.length;
-        int m = arr[0].length;
+        /*
+        sr - start row
+        er - end row
+        sc - start col
+        ec - end col
+         */
 
-        while (j < k && l < m){
+        int i, sr = 0, sc = 0;
+        int er = arr.length;
+        int ec = arr[0].length;
 
-            // print each row starting at j
-            for (i = l; i < m; ++i){
-                System.out.print(arr[j][i] + " ");
+        while (sr < er && sc < ec){
+
+            // print top row
+            // Start at the start col, end at the end col. Start row does not change, end column will
+            for (i = sc; i < ec; i++){
+                System.out.print(arr[sr][i] + " ");
             }
-            j++;
+            sr++;
 
-            //print the column at each
-            for (i = j; i < k; ++i){
-                System.out.print(arr[i][m - 1] + " ");
+            // print last col
+            // start at the start row, go to end row, end column does not change, end row will
+            for (i = sr; i < er; i++){
+                System.out.print(arr[i][ec - 1] + " ");
             }
-            m--;
+            ec--;
 
-            //print the last row
-            if (j < k){
-                for (i = m - 1; i >= l; --i){
-                    System.out.print(arr[k - 1][i] + " ");
+            // print last row
+            // end col to start col, print end row and, end col changes
+            if (sr < er){
+                for (i = ec - 1; i >= sc; i--){
+                    System.out.print(arr[er - 1][i] + " ");
                 }
-                k--;
+                er--;
             }
 
-            // print the first col
-            if (l < m){
-                for(i = l; i >= l; --i){
-                    System.out.print(arr[l][i] + " ");
+            // print first col
+            // end row to start row, end row changes, start col does not.
+            if (sc < ec){
+                for (i = er - 1; i >= sr; i--) {
+                    System.out.print(arr[i][sc] + " ");
                 }
-                l++;
+                sc++;
+            }
+        }
+    }
+
+    //print multiplication table for 12X12
+    public static void multiTable(int width){
+
+        for (int i = 1; i <= width; i++){
+            for (int j = 1; j <= width; j++){
+                System.out.print(i*j + "\t");
+            }
+            System.out.println();
+        }
+    }
+
+    // Given an `Ocean`, count the number of `Islands`.
+    public static int countIslands(int[][] ocean){
+
+        //check if array is not empty
+        int sum = 0;
+
+        boolean[][] visited = new boolean[ocean.length][ocean[0].length];
+
+        for (int i = 0; i < ocean.length; i++){
+            for (int j = 0; j < ocean[i].length; j++){
+                if (ocean[i][j] == 1 && !visited[i][j]){
+                    sum++;
+                    removeIsland(ocean, i, j);
+                }
             }
         }
 
-//        int i, k = 0, l = 0;
-//
-//        int m = a.length;
-//        int n = a[0].length;
-//        /*  k - starting row index
-//        m - ending row index
-//        l - starting column index
-//        n - ending column index
-//        i - iterator
-//        */
-//
-//        while (k < m && l < n) {
-//            // Print the first row from the remaining rows
-//            for (i = l; i < n; ++i) {
-//                System.out.print(a[k][i] + " ");
-//            }
-//            k++;
-//
-//            // Print the last column from the remaining columns
-//            for (i = k; i < m; ++i) {
-//                System.out.print(a[i][n - 1] + " ");
-//            }
-//            n--;
-//
-//            // Print the last row from the remaining rows */
-//            if (k < m) {
-//                for (i = n - 1; i >= l; --i) {
-//                    System.out.print(a[m - 1][i] + " ");
-//                }
-//                m--;
-//            }
-//
-//            // Print the first column from the remaining columns */
-//            if (l < n) {
-//                for (i = m - 1; i >= k; --i) {
-//                    System.out.print(a[i][l] + " ");
-//                }
-//                l++;
-//            }
-//        }
+        return sum;
     }
 
     //--------------HELPER METHODS---------------------
+
+    protected static void removeIsland(int[][] ocean, int i, int j){
+
+        //out of bounds
+        if (i > ocean.length - 1 || i < 0 ||
+                j > ocean[i].length - 1 || j < 0 || ocean[i][j] == 0){
+            return;
+        }
+
+        ocean[i][j] = 0;
+
+        removeIsland(ocean, i + 1, j);
+        removeIsland(ocean, i - 1, j);
+        removeIsland(ocean, i, j + 1);
+        removeIsland(ocean, i, j - 1);
+        removeIsland(ocean, i + 1, j + 1);
+        removeIsland(ocean, i - 1, j + 1);
+        removeIsland(ocean, i - 1, j - 1);
+        removeIsland(ocean, i + 1, j - 1);
+    }
+
 
     protected static int[] toArray(int[][] matrix){
 
