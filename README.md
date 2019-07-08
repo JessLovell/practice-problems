@@ -32,6 +32,8 @@
 :blossom: | How do you reverse an array in place in Java?
 -- | How are duplicates removed from an array without using any library?
 -- | Given an array, return the value that shows up at least `n/2` times.
+-- | How do you perform a binary search in a given array?
+
 
 :sunflower: | MATRICES
 ----------- | ---------
@@ -55,9 +57,9 @@
 
 :deciduous_tree: | BINARY TREES
 ---------------- | ------------
--- | Is a tree a Binary Search Tree?
--- | All the possible permutations of a Binary Search Tree.
--- | Given a Binary Search Tree, serialize the tree into a list. Given a list, deserialize and create the exact tree.
+-- | Is a tree a Binary Search tree?
+-- | All the possible permutations of a Binary Search tree.
+-- | Given a Binary Search tree, serialize the tree into a list. Given a list, deserialize and create the exact tree.
 -- | How is a binary search tree implemented?
 -- | How do you perform preorder traversal in a given binary tree?
 -- | How do you traverse a given binary tree in preorder without recursion?
@@ -67,7 +69,6 @@
 -- | How do you traverse a binary tree in postorder traversal without recursion?
 -- | How are all leaves of a binary search tree printed?
 -- | How do you count a number of leaf nodes in a given binary tree?
--- | How do you perform a binary search in a given array?
 
 :bouquet: | MISCELLANEOUS
 --------- | -------------
