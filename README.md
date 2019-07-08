@@ -38,7 +38,7 @@
 :sunflower: | Gradietize an image (Sort a matrix).
 :sunflower: | Spiral print an array
 :sunflower: | print multiplication table for 12X12
--- | Given an `Ocean`, count the number of `Islands`.
+:sunflower: | Given an `Ocean`, count the number of `Islands`.
 -- | Given a matrix where each room has a direction to move, determine if you have escaped the matrix of rooms.
 
 
