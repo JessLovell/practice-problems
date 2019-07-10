@@ -43,4 +43,19 @@ public class Tree<T> {
         System.out.print(node.value + " ");
         printHelper(node.getRight());
     }
+
+    // Is a tree a Binary Search tree?
+
+    public boolean isBST(Node<Integer> node, int maxLeft, int minRight){
+        if (node == null){
+            return true;
+        }
+
+        if (node.value > maxLeft || node.value < minRight){
+            return false;
+        }
+
+        return (isBST(node.getLeft(), maxLeft-1, node.value) && isBST(node.getRight(), node.value, minRight+1));
+    }
+
 }

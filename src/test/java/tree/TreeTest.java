@@ -26,11 +26,13 @@ public class TreeTest {
                 1
             2       3
          4  5       6   -
-          
+
          */
 
         tree.preorderTree();
         System.out.println();
         tree.inOrderTree();
     }
+
+
 }
