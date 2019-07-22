@@ -148,9 +148,10 @@ public class Jarray {
         }
         return arr;
     }
+
     
 
-    // HELPER FUNCTIONS ---------------------------------------------------
+    // ----------------------HELPER FUNCTIONS ---------------------
 
     protected static int[] listToArray(ArrayList<Integer> list){
         int[] pure = new int[list.size()];
