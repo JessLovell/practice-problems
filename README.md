@@ -1,7 +1,7 @@
 # Practice Problems
 ## Questions
 
-:sunrise_over_mountains: | STRINGS
+:writing_hand: | STRINGS
 ------------------------ | -------
 -- | Reverse a string.
 -- | Anagram a word -- no clear direction on this one (provide all possible combinations?, return the number of words).
