@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedList;
 
 public class Jarray {
 
@@ -172,6 +173,24 @@ public class Jarray {
         }
 
         return pure;
+    }
+
+    // Calculate n! for any given n.
+    public static int nFactorial(int n){
+        if (n < 1){
+            return 1;
+        }
+        return nFactorial(n - 1) * n;
+    }
+
+    //print the permutations for a combination of strings
+    public static void permutations(String s, int start, int end){
+        if (start == end || start < 0 || end > s.length()){
+            System.out.println(s);
+        }
+        for (int i = start; i < end; i++){
+
+        }
     }
 
 }
