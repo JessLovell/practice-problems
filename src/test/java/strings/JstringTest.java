@@ -62,4 +62,16 @@ public class JstringTest {
         assertEquals(Jstring.countVowels("j"), "vowels: 0, consonants: 1");
 
     }
+
+    @Test
+    public void testCountChar() {
+        assertEquals(Jstring.countChar("Jessica", 's'), 2);
+        assertEquals(Jstring.countChar("Jessica", 'J'), 1);
+        assertEquals(Jstring.countChar("Jessica", 'e'), 1);
+        assertEquals(Jstring.countChar("essssssssssiciicicicicsiisiscisi", 'J'), 0);
+        assertEquals(Jstring.countChar("essssssssssiciicicicicsiisiscisi", 'e'), 1);
+        assertEquals(Jstring.countChar("essssssssssiciicicicicsiisiscisi", 's'), 14);
+        assertEquals(Jstring.countChar("essssssssssiciicicicicsiisiscisi", 'i'), 11);
+        assertEquals(Jstring.countChar("", 'J'), 0);
+    }
 }

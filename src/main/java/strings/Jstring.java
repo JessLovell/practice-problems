@@ -113,6 +113,21 @@ public class Jstring {
         return "vowels: " + vowel + ", consonants: " + consonant;
     }
 
+    //Count the number of times a character shows up in a string
+    public static int countChar(String str, char c){
+
+        //char count
+        int count = 0;
+        //loop thru str
+        for (int i = 0; i < str.length(); i++){
+            //if char == c --> increment count
+            if (c == str.charAt(i)){
+                count++;
+            }
+        }
+        return count;
+    }
+
     //function to count the characters in a string
     private static HashMap<Character, Integer> mapIt(String str){
 
