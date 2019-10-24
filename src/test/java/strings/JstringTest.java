@@ -24,4 +24,17 @@ public class JstringTest {
         assertEquals(Jstring.firstNonRepeatedChar("l"), "l");
         assertEquals(Jstring.firstNonRepeatedChar(""), "");
     }
+
+    @Test
+    public void testPrintDups() {
+        assertEquals(Jstring.printDups("Hello"), "l");
+        assertEquals(Jstring.printDups("lleellloop"), "leo");
+        assertEquals(Jstring.printDups("lollipop"), "lop");
+        assertEquals(Jstring.printDups("aaaaaaaaaaAAaaaaaaaaaa"), "aA");
+        assertEquals(Jstring.printDups(""), "");
+        assertEquals(Jstring.printDups("q"), "");
+        assertEquals(Jstring.printDups("qq"), "q");
+
+
+    }
 }
