@@ -58,6 +58,36 @@ public class Jstring {
         return ans + "";
     }
 
+    //Check if two strings are annagrams
+    public static boolean twoWordsAnagrams(String str1, String str2){
+        //check if lengths ==
+        if (str1.length() != str2.length()){
+            return false;
+        }
+        //Hashmap str1
+        HashMap<Character, Integer> map = mapIt(str1);
+
+        //forloop str 2
+        for (int i = 0; i < str2.length(); i++) {
+            //char is not in map, or the count is already 0
+            if (!map.containsKey(str2.charAt(i))) {
+                return false;
+            }
+            int update = map.get(str2.charAt(i));
+            if (update < 2) {
+                map.remove(str2.charAt(i));
+            } else {
+                //subrtact count from map1
+                map.put(str2.charAt(i), update - 1);
+            }
+        }
+        //if the map has stuff --> false
+        if (map.keySet().size() > 0){
+            return false;
+        }
+        return true;
+    }
+
 
     //function to count the characters in a string
     private static HashMap<Character, Integer> mapIt(String str){

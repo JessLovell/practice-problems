@@ -34,7 +34,19 @@ public class JstringTest {
         assertEquals(Jstring.printDups(""), "");
         assertEquals(Jstring.printDups("q"), "");
         assertEquals(Jstring.printDups("qq"), "q");
+    }
+
+    @Test
+    public void testTwoWordsAnagrams() {
+        assertTrue(Jstring.twoWordsAnagrams("Hello", "Hello"));
+        assertTrue(Jstring.twoWordsAnagrams("Hello", "Heoll"));
+        assertTrue(Jstring.twoWordsAnagrams("Hello", "leHlo"));
+        assertTrue(Jstring.twoWordsAnagrams("jessica", "esicajs"));
 
 
+        assertFalse(Jstring.twoWordsAnagrams("Hello", "Hellop"));
+        assertFalse(Jstring.twoWordsAnagrams("Hello", "HelLo"));
+        assertFalse(Jstring.twoWordsAnagrams("Hello", "Helll"));
+        assertFalse(Jstring.twoWordsAnagrams("Hello", "tulip"));
     }
 }
