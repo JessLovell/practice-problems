@@ -88,6 +88,30 @@ public class Jstring {
         return true;
     }
 
+    //count the vowels and consonants in a String
+    //I am making an assumption that a,e,i,o,u are vowels and providing one count
+    //I am assuming that there are no special characters, spaces, or numbers in my string
+    public static String countVowels(String str){
+
+        //vowel count
+        int vowel = 0;
+        //consonant count
+        int consonant = 0;
+        //Loop thru string
+        for (int i = 0 ; i < str.length(); i++){
+            //if aieou --> increment vowel
+            char c = str.charAt(i);
+            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'){
+                vowel++;
+            }
+            //else --> increment consonant
+            else {
+                consonant++;
+            }
+        }
+
+        return "vowels: " + vowel + ", consonants: " + consonant;
+    }
 
     //function to count the characters in a string
     private static HashMap<Character, Integer> mapIt(String str){

@@ -49,4 +49,17 @@ public class JstringTest {
         assertFalse(Jstring.twoWordsAnagrams("Hello", "Helll"));
         assertFalse(Jstring.twoWordsAnagrams("Hello", "tulip"));
     }
+
+    @Test
+    public void testCountVowels() {
+        assertEquals(Jstring.countVowels("Jessica"), "vowels: 3, consonants: 4");
+        assertEquals(Jstring.countVowels("Hello"), "vowels: 2, consonants: 3");
+        assertEquals(Jstring.countVowels("eia"), "vowels: 3, consonants: 0");
+        assertEquals(Jstring.countVowels("Jssc"), "vowels: 0, consonants: 4");
+        assertEquals(Jstring.countVowels("eiaeiaJssc"), "vowels: 6, consonants: 4");
+        assertEquals(Jstring.countVowels(""), "vowels: 0, consonants: 0");
+        assertEquals(Jstring.countVowels("i"), "vowels: 1, consonants: 0");
+        assertEquals(Jstring.countVowels("j"), "vowels: 0, consonants: 1");
+
+    }
 }
