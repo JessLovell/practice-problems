@@ -83,4 +83,11 @@ public class JarrayTest {
         assertArrayEquals(new int[]{3}, Jarray.reverse(two));
         assertArrayEquals(new int[]{8, 6, 7, 5, 4}, Jarray.reverse(three));
     }
+
+    @Test
+    public void testNFactorial(){
+        System.out.println(Jarray.nFactorial(2));
+        System.out.println(Jarray.nFactorial(3));
+        System.out.println(Jarray.nFactorial(4));
+    }
 }

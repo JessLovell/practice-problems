@@ -57,18 +57,18 @@
 
 :deciduous_tree: | BINARY TREES
 ---------------- | ------------
--- | Is a tree a Binary Search tree?
+:deciduous_tree: | Is a tree a Binary Search tree?
 -- | All the possible permutations of a Binary Search tree.
 -- | Given a Binary Search tree, serialize the tree into a list. Given a list, deserialize and create the exact tree.
--- | How is a binary search tree implemented?
--- | How do you perform preorder traversal in a given binary tree?
+:deciduous_tree: | How is a binary search tree implemented?
+:deciduous_tree: | How do you perform preorder traversal in a given binary tree?
 -- | How do you traverse a given binary tree in preorder without recursion?
--- | How do you perform an inorder traversal in a given binary tree?
+:deciduous_tree: | How do you perform an inorder traversal in a given binary tree?
 -- | How do you print all nodes of a given binary tree using inorder traversal without recursion?
--- | How do you implement a postorder traversal algorithm?
+:deciduous_tree: | How do you implement a postorder traversal algorithm?
 -- | How do you traverse a binary tree in postorder traversal without recursion?
--- | How are all leaves of a binary search tree printed?
--- | How do you count a number of leaf nodes in a given binary tree?
+:deciduous_tree: | How are all leaves of a binary search tree printed?
+:deciduous_tree: | How do you count a number of leaf nodes in a given binary tree?
 
 :bouquet: | MISCELLANEOUS
 --------- | -------------
@@ -83,5 +83,5 @@
 -- | How do you check if two rectangles overlap with each other?
 -- | How do you design a vending machine?
 -- | Create an `ArrayList` Class with `.add`, `.get`, `.remove`.
--- | compute nth fib number
+:bouquet: | compute nth fib number
 -- | print odd numbers
