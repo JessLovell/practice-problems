@@ -3,16 +3,15 @@
 
 :writing_hand: | STRINGS
 ------------------------ | -------
--- | Reverse a string.
+:sunrise_over_mountains: | Reverse a string.
 -- | Anagram a word -- no clear direction on this one (provide all possible combinations?, return the number of words).
--- | How do you print duplicate characters from a string?
--- | How do you check if two strings are anagrams of each other?
--- | How do you print the first non-repeated character from a string?
--- | How can a given string be reversed using recursion?
+:sunrise_over_mountains: | How do you print duplicate characters from a string?
+:sunrise_over_mountains: | How do you check if two strings are anagrams of each other?
+:sunrise_over_mountains: | How do you print the first non-repeated character from a string?
+:sunrise_over_mountains: | How can a given string be reversed using recursion?
 -- | How do you check if a string contains only digits?
--- | How are duplicate characters found in a string?
--- | How do you count a number of vowels and consonants in a given string?
--- | How do you count the occurrence of a given character in a string?
+:sunrise_over_mountains: | How do you count a number of vowels and consonants in a given string?
+:sunrise_over_mountains: | How do you count the occurrence of a given character in a string?
 -- | How do you find all permutations of a string?
 -- | How do you reverse words in a given sentence without using any library method?
 -- | How do you check if two strings are a rotation of each other?
