@@ -99,5 +99,18 @@ public class Tree<T> {
         return min;
     }
 
+    public void printLeaves(Node<T> root){
+
+        if (root.left == null && root.right == null) {
+            System.out.println(root.value);
+        }
+        if(root.left != null) {
+            printLeaves(root.left);
+        }
+        if(root.right != null){
+            printLeaves(root.right);
+        }
+    }
+
 
 }

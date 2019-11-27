@@ -144,6 +144,41 @@ public class TreeTest {
 
         assertTrue(tree.isBST(one));
     }
+    @Test
+    public void testPrintLeavesThreeLeaves() {
+        Node<Integer> one = new Node<>(4);
+        Node<Integer> two = new Node<>(2);
+        Node<Integer> three = new Node<>(5);
 
+        one.setLeft(two);
+        one.setRight(three);
+        two.setLeft(new Node<>(1));
+        two.setRight(new Node<>(3));
+        three.setRight(new Node<>(6));
+        Tree<Integer> tree = new Tree<>(one);
+
+        tree.printLeaves(tree.root);
+    }
+
+    @Test
+    public void testPrintLeavesOneLeaf() {
+        Node<Integer> one = new Node<>(4);
+        Tree<Integer> tree = new Tree<>(one);
+
+        tree.printLeaves(tree.root);
+    }
+    @Test
+    public void testPrintLeavesUnbalancedTree() {
+        Node<Integer> one = new Node<>(1);
+        Node<Integer> two = new Node<>(2);
+        Node<Integer> three = new Node<>(3);
+
+        one.setLeft(two);
+        two.setLeft(three);
+        three.setRightLeft(new Node<>(4), new Node<>(5));
+        Tree<Integer> tree = new Tree<>(one);
+
+        tree.printLeaves(tree.root);
+    }
 
 }
