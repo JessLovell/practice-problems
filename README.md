@@ -12,10 +12,10 @@
 -- | How do you check if a string contains only digits?
 :sunrise_over_mountains: | How do you count a number of vowels and consonants in a given string?
 :sunrise_over_mountains: | How do you count the occurrence of a given character in a string?
--- | How do you find all permutations of a string?
+:sunrise_over_mountains: | How do you find all permutations of a string?
 -- | How do you reverse words in a given sentence without using any library method?
--- | How do you check if two strings are a rotation of each other?
--- | How do you check if a given string is a palindrome?
+:sunrise_over_mountains: | How do you check if two strings are a rotation of each other?
+:sunrise_over_mountains | How do you check if a given string is a palindrome?
 
 
 :blossom: | ARRAYS

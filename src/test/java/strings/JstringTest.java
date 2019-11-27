@@ -74,4 +74,42 @@ public class JstringTest {
         assertEquals(Jstring.countChar("essssssssssiciicicicicsiisiscisi", 'i'), 11);
         assertEquals(Jstring.countChar("", 'J'), 0);
     }
+
+    @Test
+    public void testPermutation(){
+        Jstring one = new Jstring();
+
+        one.permutation("a", 0, 0);
+        one.permutation("bc", 0, 1);
+        one.permutation("def", 0, 2);
+        one.permutation("ghij", 0, 3);
+    }
+
+    @Test
+    public void testPalindrome() {
+        Jstring test = new Jstring();
+
+        assertTrue(test.isPalindrome("a"));
+        assertTrue(test.isPalindrome("aba"));
+        assertTrue(test.isPalindrome("abba"));
+        assertTrue(test.isPalindrome("racecar"));
+        assertTrue(test.isPalindrome("tacocat"));
+        assertTrue(test.isPalindrome("qwertyuioppoiuytrewq"));
+
+        assertFalse(test.isPalindrome("ab"));
+        assertFalse(test.isPalindrome("abc"));
+        assertFalse(test.isPalindrome("abb"));
+        assertFalse(test.isPalindrome("pat"));
+        assertFalse(test.isPalindrome("qwertyuiopoiuytrew"));
+    }
+
+    @Test
+    public void testSumArr(){
+        Jstring test = new Jstring();
+
+        assertEquals(test.sumArr(new int[]{1, 2, 3, 4, 5, 6}, 0, 5), 21);
+        assertEquals(test.sumArr(new int[]{1}, 0, 0), 1);
+        assertEquals(test.sumArr(new int[]{234, 978}, 0, 1), 1212);
+
+    }
 }

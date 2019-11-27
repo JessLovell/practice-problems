@@ -142,6 +142,45 @@ public class Jstring {
         }
         return seen;
     }
+
+    public void permutation(String s, int left, int right){
+        if (left == right){
+            System.out.println(s);
+        }
+        else {
+            for (int i = left; i <= right; i++){
+                s = swap(s, left, i);
+                permutation(s, left + 1, right);
+                s = swap(s, left, i);
+            }
+        }
+    }
+
+    private String swap(String s, int i, int j){
+        char[] arr = s.toCharArray();
+        char temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        return String.valueOf(arr);
+    }
+
+    public boolean isPalindrome(String str){
+
+        for(int i = 0; i < str.length()/2; i++){
+            if(str.charAt(i) != str.charAt(str.length()-i -1)){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public int sumArr(int[] arr, int start, int end) {
+        if (start > end){
+            return 0;
+        }
+        return arr[start] + sumArr(arr, start + 1, end);
+    }
+
 }
 
 
