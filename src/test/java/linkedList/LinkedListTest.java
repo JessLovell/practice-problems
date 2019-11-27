@@ -110,4 +110,23 @@ public class LinkedListTest {
         one.toString();
         assertEquals(6, one.length());
     }
+
+    @Test
+    public void testIsCycle(){
+        LinkedList<Integer> one = new LinkedList<Integer>();
+        one.add(1);
+        one.add(2);
+        one.add(3);
+        one.add(8);
+        one.add(4);
+        one.add(5);
+        assertFalse("This is not a cycle", one.isCycle());
+
+        one = new LinkedList<Integer>();
+        one.add(1).setNext(one.add(3));
+        one.add(2);
+
+        assertTrue("This LL is a cycle", one.isCycle());
+
+    }
 }

@@ -46,16 +46,58 @@ public class Tree<T> {
 
     // Is a tree a Binary Search tree?
 
-    public boolean isBST(Node<Integer> node, int maxLeft, int minRight){
+    public boolean isBST(Node<Integer> node) {
         if (node == null){
             return true;
         }
-
-        if (node.value > maxLeft || node.value < minRight){
+        if (node.left != null && max(node.left) > node.value){
             return false;
         }
-
-        return (isBST(node.getLeft(), maxLeft-1, node.value) && isBST(node.getRight(), node.value, minRight+1));
+        if (node.right != null && min(node.right) < node.value){
+            return false;
+        }
+        if (!isBST(node.left) || !isBST(node.right)){
+            return false;
+        }
+        return true;
     }
+
+    protected Integer max(Node<Integer> node){
+        if (node == null){
+            return Integer.MIN_VALUE;
+        }
+
+        int max = node.value;
+        int left = max(node.left);
+        int right = max(node.right);
+
+        if (max < left){
+            max = left;
+        }
+        if (max < right){
+            max = right;
+        }
+
+        return max;
+    }
+
+    protected Integer min(Node<Integer> node){
+        if (node == null){
+            return Integer.MAX_VALUE;
+        }
+        int min = node.value;
+        int left = min(node.left);
+        int right = min(node.right);
+
+        if (min > left){
+            min = left;
+        }
+        if (min > right){
+            min = right;
+        }
+
+        return min;
+    }
+
 
 }

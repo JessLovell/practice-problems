@@ -131,5 +131,24 @@ public class LinkedList<T> {
             }
         }
     }
+
+    public boolean isCycle(){
+
+        if (this.head != null){
+            Node<T> slow = this.head;
+            Node<T> fast = this.head;
+
+            while(fast != null && fast.getNext() !=null){
+                slow = slow.getNext();
+                fast = fast.getNext().getNext();
+                if (fast == slow){
+                    return true;
+                }
+            }
+            return false;
+        } else {
+            return false;
+        }
+    }
 }
 

@@ -46,7 +46,7 @@
 :tulip: | LINKED LISTS
 ------- | ------------
 :tulip: | How do you find the middle element of a singly linked list in one pass?
--- | How do you check if a given linked list contains a cycle? How do you find the starting node of the cycle?
+:tulip: | How do you check if a given linked list contains a cycle? How do you find the starting node of the cycle?
 -- | How do you **(recursivly)** reverse a linked list?
 :tulip: | How do you reverse a singly linked list without recursion?
 :tulip: | How are duplicate nodes removed in an unsorted linked list?
@@ -56,7 +56,7 @@
 
 :deciduous_tree: | BINARY TREES
 ---------------- | ------------
--- | Is a tree a Binary Search tree?
+:deciduous_tree: | Is a tree a Binary Search tree?
 -- | All the possible permutations of a Binary Search tree.
 -- | Given a Binary Search tree, serialize the tree into a list. Given a list, deserialize and create the exact tree.
 -- | How is a binary search tree implemented?
